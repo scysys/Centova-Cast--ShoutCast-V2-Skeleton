@@ -64,8 +64,7 @@ select#mountpoints_list {
 <div class="input-group-prepend">
 <span class="input-group-text">{="Relay URL"}</span>
 </div>
-{if $config.usesource==0}<input id="sc_relay_url" type="text" name="mountpoints_field[streamrelayurl]" class="list_editor_field form-control" size="50" value="" />{/if}
-{if $config.usesource==1}<input id="sc_relay_url" class="form-control" disabled="disabled" value="{="Cannot simultaneously relay a remote stream and use the autoDJ."}" />{/if}
+<input type="text" name="mountpoints_field[streamrelayurl]" class="list_editor_field form-control" placeholder="{="Cannot simultaneously relay a remote stream and use the autoDJ."}" size="50" value="" />
 </div>
 
 <div class="input-group mb-3">
